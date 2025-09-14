@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script>
+            var exports = {};
+        </script>
+        <script src="./dist/index.js" defer></script>
+    </head>
+    <body>
+        <div class="left-bar">
+            <h1>Odin</h1>
+        </div>
+        <div class="right-bar">
+            <div class="top">
+                <h3>
+                    Here in Odin libraries You can find all the books you need
+                    or want, even those written thousand of years ago, and
+                    because you are our priority, you will soon be able to order
+                    books from the future! Just wait until out time machine
+                    arrives.
+                </h3>
+                <h3>In the mean time, make sure to sign in</h3>
+            </div>
+            <div class="middle">
+                <div><h2>Lets do this!</h2></div>
+
+                <div class="form-container">
+                    <form action="" method="post" class="form" id="signin-form">
+                        <div>
+                            <label for="first_name">First Name*:</label>
+                            <input
+                                type="text"
+                                name="first_name"
+                                id="first_name"
+                                placeholder="Bob"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="last_name">Last Name:</label>
+                            <input
+                                type="text"
+                                name="last_name"
+                                id="last_name"
+                                placeholder="Smith"
+                            />
+                        </div>
+                        <div>
+                            <label for="email">Your Email*:</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                placeholder="your-email@example.com"
+                                pattern="/^[^@]+@[^@]+\.[^@]+$/gm"
+                                title="Please enter a valid email, example: user@email.com"
+                            />
+                        </div>
+                        <div>
+                            <label for="phone-number">Your phone number:</label>
+                            <input
+                                type="number"
+                                name="phone-number"
+                                id="phone-number"
+                                placeholder="+1"
+                            />
+                        </div>
+                        <div>
+                            <label for="Password">Password*:</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="confirm_password"
+                                >Confirm Password*:</label
+                            >
+                            <input
+                                type="password"
+                                name="confirm_password"
+                                id="confirm_password"
+                                required
+                            />
+                        </div>
+                        <!-- Submit -->
+                    </form>
+                </div>
+                <p>Fields with an * are required</p>
+            </div>
+            <div class="end">
+                <button type="submit" form="signin-form">Create account</button>
+                <p>
+                    Already have an account?
+                    <a
+                        href="https://www.theodinproject.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Log in</a
+                    >
+                </p>
+                <p>
+                    This site was created for educational purposes only, and is
+                    not an actual business nor organization (time travel has not
+                    ben invented yet!). You 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
